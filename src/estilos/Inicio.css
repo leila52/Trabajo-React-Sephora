@@ -1,0 +1,242 @@
+.promo-container {
+    position: relative;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: 250px; /* Ajusta según lo necesites */
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.promo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black; /* Fondo semitransparente para resaltar el texto */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.promo-text h1 {
+    align-items: flex-start;
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+}
+
+.promo-text span {
+    font-size: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 20px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.item img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.item h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  a{
+    color: white;
+  }
+
+.botonnn {
+    margin: 10px 0;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 25px;
+    background-color: #cf2b88;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botonnn:hover {
+    background-color: #c5006b;
+}
+
+.item p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+.novedades {
+    padding: 20px;
+}
+
+.novedades h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.novedades p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.producto {
+    width: 20%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.producto h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+
+.informacion {
+    display: flex; /* Usa flexbox para alinear en una fila */
+    justify-content: space-between; /* Espacio entre columnas */
+    gap: 20px; /* Espacio entre los divs */
+    padding: 20px; /* Espaciado exterior */
+}
+
+.info {
+    flex: 1; /* Para que los divs ocupen el mismo espacio */
+    background-color: #f8f8f8; /* Color de fondo suave */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: center; /* Centrar texto */
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Hacer que los divs sean más compactos en pantallas pequeñas */
+@media (max-width: 768px) {
+    .informacion {
+        flex-direction: column; /* Apilar en columnas */
+        gap: 15px; /* Reducir espacio entre cajas */
+    }
+}
+
+/* footer.css */
+.footer {
+    background-color: #f8e1e7;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.instagram {
+    color: #e4405f;
+}
+
+.tiktok {
+    color: #000;
+}
+
+.youtube {
+    color: #ff0000;
+}
+
+.facebook {
+    color: #1877f2;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.footer-credits {
+    font-size: 0.9rem;
+    color: #666;
+}
+

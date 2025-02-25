@@ -1,0 +1,161 @@
+
+/* Estilos generales de la lista */
+.informacion-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 70px; /* Espaciado superior para separar del menú */
+}
+/* Estilo de los elementos individuales */
+.info-item {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.info-item:hover {
+    transform: scale(1.05);
+}
+
+.info-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.info-item div {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Botones */
+.info-item button {
+    margin: 5px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    background: black;
+    color: white;
+    font-size: 14px;
+}
+
+.info-item button:hover {
+    background: #333;
+}
+
+/* Botón de agregar afición */
+.add-aficion-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 18px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+.add-aficion-btn:hover {
+    background: #333;
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1001;
+}
+
+.close-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.tonos-container {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.tono-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Ajusta el tamaño del círculo */
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border 0.3s ease;
+    position: relative;
+}
+
+.tono-label input[type="radio"] {
+    display: none; /* Oculta el radio original */
+}
+
+.tono-label .tono-imagen {
+    width: 100%; /* Hace que la imagen se ajuste dentro */
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tono-label input[type="radio"]:checked + .tono-imagen {
+    border: 2px solid #000; /* Resalta el tono seleccionado */
+}
+
+
+/* Responsividad */
+@media (max-width: 900px) {
+    .informacion-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .informacion-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

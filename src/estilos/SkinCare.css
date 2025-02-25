@@ -1,0 +1,96 @@
+/* Estilos inspirados en Sephora para la interfaz de búsqueda */
+.filters {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.filters form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: nowrap;
+}
+
+.filters label {
+  font-weight: 600;
+  color: #333333;
+}
+
+.filters input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.filters input:focus {
+  border-color: #e91e63;
+  outline: none;
+}
+
+.filters button {
+  background-color: #e91e63;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filters button:hover {
+  background-color: #c2185b;
+}
+
+.error {
+  color: #e91e63;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead tr {
+  background-color: #f8f8f8;
+  border-bottom: 2px solid #e91e63;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.actions button {
+  background-color: #e91e63;
+  color: white;
+  padding: 8px 16px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.actions button.view {
+  background-color: #333;
+}
+
+.actions button:hover {
+  background-color: #c2185b;
+}
+
+.actions button.view:hover {
+  background-color: #555;
+}
